@@ -59,3 +59,7 @@ This project needs a star️ from you. Don't forget to leave a star✨
 
 ## 📝 Liscense
 This project is Licensed under the <a href="./LICENSE">MIT License</a>. Please go through the License atleast once before making your contribution. 
+
+## Additional references regarding liscences
+
+GitHub license explained [https://choosealicense.com](https://choosealicense.com)
