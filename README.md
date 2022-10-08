@@ -4,7 +4,7 @@
 
 ## 🛠️ Installation Steps
 
-**1**. [Fork](https://github.com/RuntimeThinkers/devcheatsheet) the project. Click on the <a href="https://github.com/Dun-sin/Code-Magic/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="15" width="15"></a> icon in the top right to get started
+**1**. [Fork](https://github.com/RuntimeThinkers/devcheatsheet) the project. Click on the <a href="https://github.com/RuntimeThinkers/devcheatsheet/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="15" width="15"></a> icon in the top right to get started
 
 
 **2**. Clone the project, you can use the following command:
