@@ -56,7 +56,6 @@ git push
 
 This project needs a star️ from you. Don't forget to leave a star✨
 
-<br>
-<p>
-This project is Licensed under the <a href="./LICENSE">MIT License</a>. Please go through the License atleast once before making your contribution. </p>
-<br>
+
+## 📝 Liscense
+This project is Licensed under the <a href="./LICENSE">MIT License</a>. Please go through the License atleast once before making your contribution. 
