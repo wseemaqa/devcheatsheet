@@ -27,8 +27,30 @@ CREATE DATABASE database_name;
 USE database_name;
 ```
 
+
 ### SELECT STATEMENT
 
 ```SELECT column1,column2,column3....
 FROM table_name;
 ```
+
+## Joins 
+
+### INNER JOIN 
+```sql
+SELECT ... FROM t1 JOIN t2 ON t1.id1 = t2.id2 WHERE condition;
+```
+
+### LEFT JOIN
+
+```sql
+SELECT ... FROM t1 LEFT JOIN t2 ON t1.id1 = t2.id2 WHERE condition;
+```
+
+### RIGHT JOIN
+
+```sql
+SELECT ... FROM t1 RIGHT JOIN t2 ON t1.id1 = t2.id2 WHERE condition;
+```
+
+
