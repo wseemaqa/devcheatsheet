@@ -200,4 +200,5 @@ while condition :
 |str.zfill(len)|str.swapcase()|str.isdecimal()|
 |str.isdigit()|str.islower()|str.isupper()|
 |str.endswith(value, start, end)|str.startswith(value, start, end)|str.isspace()|
+|str.isalpha() (checking for alphabets)|str.isascii() (checking for ascii chars)|str.title() (making each word first letter capitalized)|
 
