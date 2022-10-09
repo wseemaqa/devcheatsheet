@@ -3,6 +3,8 @@ C++
 #include "myfile.h"         // Insert file in current directory
 #define X some text         // Replace X with some text
 #define F(a,b) a+b          // Replace F(1,2) with 1+2
+#define all(arr) arr.begin(),arr.end()  //Replace sort(arr.begin(), arr.end()) with sort(all(arr))
+#define allr(arr) arr.rbegin(),arr.rend()  //Replace sort(arr.rbegin(), arr.rend()) with sort(allr(arr))
 #define X \
  some text                  // Multiline definition
 #undef X                    // Remove definition
