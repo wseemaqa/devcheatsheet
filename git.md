@@ -1,10 +1,10 @@
-         #creates a new local repo.
+## GIT   
+### creates a new local repo.
 	       git init
-	       
-	 #shows changes not yet staged 
+### shows changes not yet staged 
 	       git diff
 
-	#Show what files are changed, staged etc
+### Show what files are changed, staged etc
 		git status
 
 	#Add files that are new, updated etc
