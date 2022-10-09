@@ -348,6 +348,8 @@ exp(x); log(x); log10(x);   // e to the x, log base e, log base 10
 pow(x, y); sqrt(x);         // x to the y, square root
 ceil(x); floor(x);          // Round up or down (as a double)
 fabs(x); fmod(x, y);        // Absolute value, x mod y
+x = rand() % 100;           // x in the range 0 to 99
+x = rand() % 100 + 1;      // x in the range 1 to 100
 ```
 
 ## `assert.h`, `cassert` (Debugging Aid)
