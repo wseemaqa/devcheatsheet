@@ -26,12 +26,20 @@ CREATE DATABASE database_name;
 USE database_name;
 ```
 ## Joins 
+
+### INNER JOIN 
 ```sql
 SELECT ... FROM t1 JOIN t2 ON t1.id1 = t2.id2 WHERE condition;
 ```
-``sql
+
+### LEFT JOIN
+
+```sql
 SELECT ... FROM t1 LEFT JOIN t2 ON t1.id1 = t2.id2 WHERE condition;
 ```
+
+### RIGHT JOIN
+
 ```sql
-SELECT ... FROM t1 JOIN (t2 JOIN t3 ON ...) ON ...;
+SELECT ... FROM t1 RIGHT JOIN t2 ON t1.id1 = t2.id2 WHERE condition;
 ```
