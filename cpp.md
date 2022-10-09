@@ -110,6 +110,11 @@ try { a; }
 catch (T t) { b; }          // If a throws a T, then jump here
 catch (...) { c; }          // If a throws something else, jump here
 
+{ios_base::sync_with_stdio(false); 
+ cin.tie(NULL); 
+ cout.tie(NULL);
+}                           //For fast Input-Output. It helps in Competitive Programming. Lowers the time taken fot the code to pass. Add this in main function.
+
 // ## Functions
 
 int f(int x, int y);        // f is a function taking 2 ints and returning int
