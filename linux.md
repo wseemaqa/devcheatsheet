@@ -33,8 +33,16 @@ x                                  	# execute permission (1)
 chown <user>                       	# for changing the ownership of a file/directory
 chown <user>: <group> <fileName>   	# change the user as well as group for a file or directory
 chmod <mode> <filename>				# change the permissions of a file/directory
+
 ```
 
+## To change directory permissions in Linux, use the following:
+```sh
+chmod +rwx                              #filename to add permissions.
+chmod -rwx                              #directoryname to remove permissions.
+chmod +x                                #filename to allow executable permissions.
+chmod -wx                                #filename to take out write and executable permissions.
+```
 ## tar/zip
 - Use the tar command to compress and expand files from the command line. The syntax is shown below:
 
