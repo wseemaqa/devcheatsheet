@@ -4,6 +4,22 @@ The goal is to give a concise overview of basic, modern C++ (C++14).
 
 The document is hosted on https://github.com/mortennobel/cpp-cheatsheet. Any comments and feedback are appreciated.
 
+## Header Files
+
+```cpp
+
+ #include<stdio.h>:         //It is used to perform input and output operations using functions scanf() and printf().
+ #include<iostream>:        //It is used as a stream of Input and Output using cin and cout.
+ #include<string.h>:        //It is used to perform various string functionalities.
+ #include<math.h>:          //It is used to perform mathematical operations.
+ #include<iomanip.h>:       //It is used to access set() and setprecision().
+ #include<signal.h>:        //It is used to perform signal handling functions like signal().
+ #include<stdarg.h>:        //It is used to perform standard argument functions like va_start().
+ #include<errno.h>:         //It is used to perform error handling operations like errno().
+ #include<fstream.h>:       //It is used to control the data to read from a file.
+ #include<time.h>:          //It is used to perform functions related to date() and time()
+```
+
 ## Preprocessor
 
 ```cpp
