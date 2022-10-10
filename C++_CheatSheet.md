@@ -149,7 +149,10 @@ it is used. It may be declared first and defined later. Every program consists o
 declarations and a set of function definitions (possibly in separate files), one of which must be:
 
 ```cpp
-int main()  { statements... }     // or
+int main()  { 
+    ios_base::sync_with_stdio(false);       // for fast input and output
+    cin.tie(NULL);
+statements... }     // or
 int main(int argc, char* argv[]) { statements... }
 ```
 
