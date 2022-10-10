@@ -1,4 +1,5 @@
-# devcheatsheet 
+<h1 align="center"> DEVCHEATSHEET </h1>
+
 **Collection of Developer Cheat Sheets, created and maintained by awesome developers.**
 
 
