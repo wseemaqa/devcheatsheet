@@ -34,6 +34,15 @@ The goal is to give a concise overview of basic, modern C++ (C++14).
 "hello" "world"             // Concatenated strings
 true, false                 // bool constants 1 and 0
 nullptr                     // Pointer type with the address of 0
+\a                          // Alarm or Beep (It produces a beep sound)
+\b                          // Backspace (It adds a backspace)
+\f                          // Form feed
+\r                          // Carriage return
+\t                          // Tab (It gives a tab space)
+\?                          // Question mark (It adds a question mark)
+\nnn                        // Octal No. (It represents the value of an octal number)
+\xhh                        // Hexadecimal No. (It represents the value of a hexadecimal number)
+\0                          // NULL (The null character is usually used to terminate a string)
 ```
 
 ## Declarations
