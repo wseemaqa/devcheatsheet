@@ -446,6 +446,21 @@ a.push_front(x);          // Puts x at a[0], shifts elements toward back
 a.pop_front();            // Removes a[0], shifts toward front
 ```
 
+
+## `priority_queue` (context is similar to a heap, where elements can be inserted at any moment, and only the max heap element can be retrieved)
+
+`priority_queue<T>` is like `queue<T>`s:
+
+```cpp
+#include <queue>          // Include queue (std namespace)
+a.push(x);          //	Adds the element ‘x’ at the end of the queue.
+a.pop();            // Deletes the first element of the queue.
+a.size();           //Returns the size of the queue.
+a.empty();          //	Returns whether the queue is empty.
+a.top();          //Returns a reference to the topmost element of the queue.
+a.emplace(x);     //Used to insert a new element into the priority queue container.
+```
+
 ## `utility` (pair)
 
 ```cpp
