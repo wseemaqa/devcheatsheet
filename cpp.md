@@ -404,16 +404,18 @@ if (f2) f2 << x;            // Write to file
 ## `string` (Variable sized character array)
 
 ```cpp
-#include <string>         // Include string (std namespace)
-string s1, s2="hello";    // Create strings
-s1.size(), s2.size();     // Number of characters: 0, 5
-s1 += s2 + ' ' + "world"; // Concatenation
-s1 == "hello world"       // Comparison, also <, >, !=, etc.
-s1[0];                    // 'h'
-s1.substr(m, n);          // Substring of size n starting at s1[m]
-s1.c_str();               // Convert to const char*
-s1 = to_string(12.05);    // Converts number to string
-getline(cin, s);          // Read line ending in '\n'
+#include <string>               // Include string (std namespace)
+string s1, s2="hello";          // Create strings
+s1.size(), s2.size();           // Number of characters: 0, 5
+s1 += s2 + ' ' + "world";       // Concatenation
+s1 == "hello world"             // Comparison, also <, >, !=, etc.
+s1[0];                          // 'h'
+s1.substr(m, n);                // Substring of size n starting at s1[m]
+s1.c_str();                     // Convert to const char*
+s1 = to_string(12.05);          // Converts number to string
+getline(cin, s);                // Read line ending in '\n'
+string string1.append(string2); // It is used to concatenate two strings(string1 and string2 are two string names)
+string1.length();               // It returns the length of the string (string1 is the name of the string)
 ```
 
 ## `vector` (Variable sized array/stack with built in memory allocation)
