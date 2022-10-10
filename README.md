@@ -5,15 +5,17 @@
 
 ## 🛠️ Installation Steps
 
-**1**. [Fork](https://github.com/RuntimeThinkers/devcheatsheet) the project. Click on the <a href="https://github.com/RuntimeThinkers/devcheatsheet/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="15" width="15"></a> icon in the top right to get started
+**1**. [Fork](https://github.com/RuntimeThinkers/devcheatsheet/fork) the project. Click on the <a href="https://github.com/RuntimeThinkers/devcheatsheet/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="15" width="15"></a> icon in the top right to get started
 
 
 **2**. Clone the project, you can use the following command:
 
 ```bash
+Using HTTPS
 git clone https://github.com/<your-github-username>/devcheatsheet
+or using SSH
+git clone git@github.com:<your-github-username>/devcheatsheet.git
 ```
-
 **3**. Navigate to the project directory
 
 ```bash
@@ -58,9 +60,9 @@ git push
 This project needs a star️ from you. Don't forget to leave a star✨
 
 
-## 📝 Liscense
-This project is Licensed under the <a href="./LICENSE">MIT License</a>. Please go through the License atleast once before making your contribution. 
+## 📝 License
+This project is Licensed under the [MIT License](/LICENSE). Please go through the License atleast once before making your contribution. 
 
-## Additional references regarding liscences
+## Additional references regarding licenses
 
 GitHub license explained [https://choosealicense.com](https://choosealicense.com)
