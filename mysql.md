@@ -48,6 +48,13 @@ UPDATE table_name
 SET col1=value1,col2=value2
 WHERE condition;
 ```
+### Select 
+```sql
+SELECT col_name FROM table_name;
+SELECT * FROM table_name;
+```
+
+
 ## Joins 
 
 ### INNER JOIN 
