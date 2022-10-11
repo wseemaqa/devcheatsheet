@@ -40,6 +40,13 @@ CREATE TABLE table_name(
 INSERT INTO table_name VALUES(value,value,value);
 ```
 
+### Select 
+```sql
+SELECT col_name FROM table_name;
+SELECT * FROM table_name;
+```
+
+
 ## Joins 
 
 ### INNER JOIN 
