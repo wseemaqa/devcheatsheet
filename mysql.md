@@ -34,6 +34,12 @@ CREATE TABLE table_name(
 	coln_name datatype
 );
 ```
+
+### Insert Records 
+```sql
+INSERT INTO table_name VALUES(value,value,value);
+```
+
 ## Joins 
 
 ### INNER JOIN 
