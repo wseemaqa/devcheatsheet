@@ -25,6 +25,15 @@ CREATE DATABASE database_name;
 ```sql
 USE database_name;
 ```
+### Create Table
+
+```sql
+CREATE TABLE table_name(
+	col1_name datatype,
+	col2_name datatype,
+	coln_name datatype
+);
+```
 ## Joins 
 
 ### INNER JOIN 
