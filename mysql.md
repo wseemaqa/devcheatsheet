@@ -36,10 +36,18 @@ CREATE TABLE table_name(
 ```
 
 ### Insert Records 
+
 ```sql
 INSERT INTO table_name VALUES(value,value,value);
 ```
 
+### Modifying Records
+
+```sql
+UPDATE table_name
+SET col1=value1,col2=value2
+WHERE condition;
+```
 ### Select 
 ```sql
 SELECT col_name FROM table_name;
