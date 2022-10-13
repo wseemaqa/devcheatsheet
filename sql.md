@@ -84,3 +84,26 @@ SELECT <column name>
 FROM <table name>
 WHERE <condition>
 ```
+
+## Manipulation
+Delete all records :
+```SQL
+DELETE FROM <table name>
+```
+Delete with a condition  :
+```SQl
+DELETE FROM <table name> WHERE <condition>
+```
+Example :
+1) Delete ‘Yash’ student data.
+```SQL
+DELETE FROM studentdata WHERE studentname= "Yash";
+```
+
+Update values in a column :
+```SQL
+UPDATE <table name>
+SET <column name> = <val1>, <column name> = <val2>
+WHERE <condition>;
+```
+
