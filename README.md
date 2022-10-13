@@ -27,6 +27,8 @@ cd devcheatsheet
 
 ```bash
 git checkout -b YourBranchName
+or
+git branch YourBranchName
 ```
 
 **2**. Add it to staging area
@@ -35,17 +37,19 @@ git checkout -b YourBranchName
 ```bash
 git add <path to the file you worked on>
 ```
+>Note: git add . is used to add all the files to the staging area.
 
 **3**. Commit your changes with
 
 ```bash
-git cz
+git commit -m '<your commit message>'
 ```
+>For more information about writing commits: [Click here](https://www.conventionalcommits.org/en/v1.0.0/)
 
 **4**. Push your changes
 
 ```bash
-git push
+git push -u <remote_name> <branch_name>
 ```
 
 ## 👩🏽‍💻 Contributing
