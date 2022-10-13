@@ -1,5 +1,6 @@
 ## Creation & Insertion 
 Creating a new table :
+
 ```SQL
 CREATE TABLE <table name> (
 		<column name> <data type>,
@@ -74,4 +75,12 @@ To get all unique values from a column :
 
 ```SQL
 SELECT DISTINCT <column name> FROM <table name> ;
+```
+## Where Conditionals
+
+To select specific rows with a condition :
+```SQL
+SELECT <column name> 
+FROM <table name>
+WHERE <condition>
 ```
