@@ -14,6 +14,17 @@ MySQL is a open-source, free and very popular relational database management sys
 
 ## Getting started with MYSQL
 
+## Connecting to Database using command-line client
+
+```sql
+mysql -u [username] -p [database];
+```
+
+### To exit from mysql command-line client
+    ```sql
+    exit;
+    ```
+
 ### Create databases 
 
 ```sql
