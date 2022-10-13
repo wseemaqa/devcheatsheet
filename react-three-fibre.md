@@ -70,7 +70,6 @@ const App = () => (
 | **eventPrefix** | The event prefix that is cast into canvas pointer x/y events | `offset`
 | **flat** | Use `THREE.NoToneMapping` instead of `THREE.ACESFilmicToneMapping` | `false`
 | **onCreated** | Callback after the canvas has rendered (but not yet committed) | `(state) => {}`
-| **onPointerMissed** | Response for pointer clicks that have missed any target | `(event) => {}`
 
 
 
