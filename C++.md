@@ -42,13 +42,27 @@ The goal is to give a concise overview of basic, modern C++ (C++14).
 ```
 
 ## Literals
+### Integer Literal Constants
+```cpp
+        12;                //An Integer(16 bits)
+        12U;               //An Unsigned Integer(16 bits)
+        12L;               //A Long Integer(32 bits)
+        12LL;              //A Long Long Integer(64 bits)
+```
+### Floating Point Literal Constants
+```cpp
+        12.1;              //A Double
+        12.1F;             //A Float
+        12.1L;             //A Long Double
+```
 
+### Character Literal Constants
 ```cpp
 255, 0377, 0xff             // Integers (decimal, octal, hex)
 2147483647L, 0x7fffffffl    // Long (32-bit) integers
 123.0, 1.23e2               // double (real) numbers
 'a', '\141', '\x61'         // Character (literal, octal, hex)
-'\n', '\\', '\'', '\"'      // Newline, backslash, single quote, double quote
+'\n','\t','\b', '\\', '\'', '\"'      // Newline,Tab,Backspace Backslash, Single quote, Double quote
 "string\n"                  // Array of characters ending with newline and \0
 "hello" "world"             // Concatenated strings
 true, false                 // bool constants 1 and 0
