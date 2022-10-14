@@ -64,6 +64,14 @@ WHERE condition;
 SELECT col_name FROM table_name;
 SELECT * FROM table_name;
 ```
+### 2. ALTER
+```sql 
+ALTER TABLE Table_name ADD column_name datatype;
+```
+### 3. TRUNCATE
+```sql
+TRUNCATE table table_name;
+```
 
 
 ## Joins 
