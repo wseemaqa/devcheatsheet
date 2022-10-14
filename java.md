@@ -39,7 +39,7 @@ Java Data types and Size
 |int|signed 32 bits|32|-2147483648 to 2147483647| |0|
 |long|signed 64 bits|64|-9223372036854775808 to 9223372036854775807|L or l|0|
 |float|32 bits|32|1.40239846e-45f to 3.40282347e+38f|F or f|0.0f|
-|double|64 bits|64|4.94065645841246544e-324 to 1.79769313486231570e+308|D or d|
+|double|64 bits|64|4.94065645841246544e-324 to 1.79769313486231570e+308|D or d|0.0d|
 |boolean|unsigned 8 bits|1|False (0) or True (1)|true/false |false|
 
 ### Declaring Variables, Methods and Classes
