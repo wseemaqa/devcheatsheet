@@ -31,16 +31,16 @@ Java 15| September 2020 | March 2021|
 
 Java Data types and Size
 
-|Data Type|Category|Size|Range|
-|:----:|:------:|:------:|:------:|
-|short|signed 16 bits|16|-32768 to 32767|
-|byte|assigned 8 bits|8|-128 to 127|
-|char|unsigned 16 bits|16|the complete unicode character set|
-|int|signed 32 bits|32|-2147483648 to 2147483647|
-|long|signed 64 bits|64|-9223372036854775808 to 9223372036854775807|
-|float|32 bits|32|1.40239846e-45f to 3.40282347e+38f|
-|double|64 bits|64|4.94065645841246544e-324 to 1.79769313486231570e+308|
-|boolean|unsigned 8 bits|1|False (0) or True (1)|
+|Data Type|Category|Size|Range|Literals|Default|
+|:----:|:------:|:------:|:------:|:------:|:------:|
+|short|signed 16 bits|16|-32768 to 32767| |0|
+|byte|assigned 8 bits|8|-128 to 127| |0|
+|char|unsigned 16 bits|16|the complete unicode character set|''|\u0000|
+|int|signed 32 bits|32|-2147483648 to 2147483647| |0|
+|long|signed 64 bits|64|-9223372036854775808 to 9223372036854775807|L or l|0|
+|float|32 bits|32|1.40239846e-45f to 3.40282347e+38f|F or f|0.0f|
+|double|64 bits|64|4.94065645841246544e-324 to 1.79769313486231570e+308|D or d|
+|boolean|unsigned 8 bits|1|False (0) or True (1)|true/false |false|
 
 ### Declaring Variables, Methods and Classes
 
