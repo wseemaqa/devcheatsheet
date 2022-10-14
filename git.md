@@ -3,10 +3,10 @@
 ## INSTALLATION
 
 **GitHub for Windows**
-[htps://windows.github.com](htps://windows.github.com)
+[Click here](htps://windows.github.com)
 
 **GitHub for Mac**
-[htps://mac.github.com](htps://mac.github.com)
+[Click here](htps://mac.github.com)
 
 *For Linux and Solaris platforms, the latest release is available on
 the official Git web site.*
