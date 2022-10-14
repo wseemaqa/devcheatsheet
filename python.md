@@ -1,8 +1,5 @@
----
-Title: Python
-Description: Python cheatsheet containing useful code snippets and documentation.
----
-
+# PYTHON CHEATSHEET
+    
 ## Basics
 
 ### Display
@@ -202,3 +199,33 @@ while condition :
 |str.endswith(value, start, end)|str.startswith(value, start, end)|str.isspace()|
 |str.isalpha() (checking for alphabets)|str.isascii() (checking for ascii chars)|str.title() (making each word first letter capitalized)|
 
+## Python with Files
+
+### Create
+Use open() function with `c` or `a` or `w` as mode.
+
+```py
+file = open("myfile.txt","c")
+```
+### Read
+Use open() function with `r` as mode.
+
+```py
+file = open("myfile.txt","r")
+print(file.read())
+```
+### Update or Append
+Use open() function with  `a` or `w` as mode.
+
+```py
+file = open("myfile.txt","a")
+file.write("Happy learning!!")
+file.close()
+```
+### Delete
+
+For deleting files, you must import os module and use `os.remove()` function.
+```py
+import os
+os.remove(filename)
+```
