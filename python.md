@@ -9,6 +9,7 @@ print("Hello World")
 ### Comments
 
 * `#` is used to comment a line in Python
+* `'''   '''` this is used for multiline comment in Python
 
 ## Data Types
 
@@ -31,6 +32,16 @@ print("Hello World")
 |int()| constructs an integer from any form of data like string, float or integer|
 |float()|constructs a float number from any form of data like string, float or integer|
 |str()|constructs a string from any form of data like string, float or integer|
+### Useful Math functions
+|Function| Description|
+|-----|----|
+|complex(x,y)|Creates a complex number x+iy |
+|chr()|return a unicode  string of one character|
+|divmod(a,b)|gets the quotient and remainder of a/b |
+|ord('')|return the unicode codepoint for a one character|
+|pow(a,b)|Power function ie a^b|
+|round()|Round Function|
+|abs()|Gets the absolute value|
 
 ## Variables
 
