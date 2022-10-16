@@ -447,6 +447,9 @@ getline(cin, s);          // Read line ending in '\n'
 #include <vector>         // Include vector (std namespace)
 vector<int> a(10);        // a[0]..a[9] are int (default size is 0)
 vector<int> b{1,2,3};        // Create vector with values 1,2,3
+vector<int> c(10, 5);     //Creates a new vector of 10 elements and initializes the value of each element with 5
+vector<vector<int>> x;    // Creates a 2-Dimensional vector of variable size
+vector<vector<int>> y(5, vector<int>(5, -1))  //Creates a new 2-Dimensional vector with 5 rows and 5 colums with the value of each element initialized with -1
 a.size();                 // Number of elements (10)
 a.push_back(3);           // Increase size to 11, a[10]=3
 a.back()=4;               // a[10]=4;
@@ -454,6 +457,12 @@ a.pop_back();             // Decrease size by 1
 a.front();                // a[0];
 a[20]=1;                  // Crash: not bounds checked
 a.at(20)=1;               // Like a[20] but throws out_of_range()
+a.empty();                //Returns true if the vector is empty, else returns false
+a.insert(a.begin()+1, 100)  //Inserts a new element with the value of 100 after the first element
+a.insert(a.begin()+1, 2, 200)  //Inserts two new elements, each with the value of 200 after the first element
+a.erase(a.begin()+5)      //Deletes the 5th element from the vector
+a.erase(a.begin()+1, a.begin()+3)  //Deletes the second and third element from the vector using 0-based indexing
+                                     (All elements between 2nd and 4th element, including the 2nd element) 
 for (int& p : a)
   p=0;                    // C++11: Set all elements of a to 0
 for (vector<int>::iterator p=a.begin(); p!=a.end(); ++p)
