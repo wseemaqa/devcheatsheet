@@ -39,7 +39,14 @@ You have three different possibilities for declaring a variable in JavaScript, e
 
 - var — The most common variable. It can be reassigned but only accessed within a function. Variables defined with var move to the top when the code is executed.
 - const — Can not be reassigned and not accessible before they appear within the code.
-- let — Similar to const, the let variable can be reassigned but not re-declared.
+- let — Similar to const, the let variable can be reassigned but not re-declared.  
+   
+##Scope
+   Variables declared using var are function scoped, i.e. they can be used throughout the function in which they are declared.
+   Variables declared using let or const are block scoped, i.e. they can only be used in the block in which they are declared.
+   
+   Note: Try to use let and const while defining variables to avoid scope-based errors.  
+   
 ## Data Types
 Variables can contain different types of values and data types. You use = to assign them:
 
