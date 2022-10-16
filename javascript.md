@@ -41,7 +41,7 @@ You have three different possibilities for declaring a variable in JavaScript, e
 - const — Can not be reassigned and not accessible before they appear within the code.
 - let — Similar to const, the let variable can be reassigned but not re-declared.  
    
-##Scope
+### Scope
    Variables declared using var are function scoped, i.e. they can be used throughout the function in which they are declared.
    Variables declared using let or const are block scoped, i.e. they can only be used in the block in which they are declared.
    
@@ -139,7 +139,17 @@ JavaScript functions are blocks of code that perform a certain task. A basic fun
 function name(parameter1, parameter2, parameter3) {
     // what the function does
 ```
-As you can see, it consists of the function keyword plus a name. The function’s parameters are in the brackets and you have curly brackets around what the function performs. You can create your own, but to make your life easier – there are also a number of default functions.
+As you can see, it consists of the function keyword plus a name. The function’s parameters are in the brackets and you have curly brackets around what the function performs. You can create your own, but to make your life easier – there are also a number of default functions.  
+   
+### Arrow Functions
+   Arrow functions are a faster way of writing short helper functions. This is how you could write an arrow function:
+   ```javascript
+   let product =(x,y)=> {
+   return x*y;
+   }
+   console.log(product(2,3));
+   //This will log 6 to the console.
+```
 
 ## Outputting Data
 A common application for functions is the output of data. For the output, you have the following options:
@@ -176,6 +186,8 @@ You have several parameters to create loops:
 - do while — Similar to the while loop but it executes at least once and performs a check at the end to see if the condition is met to execute again
 - break —Used to stop and exit the cycle at certain conditions
 - continue — Skip parts of the cycle if certain conditions are met
+- for-of — Used to iterate across data structures(Arrays, objects, etc.)
+   
 ## If – Else Statements
 These types of statements are easy to understand. Using them, you can set conditions for when your code is executed. If certain conditions apply, something is done, if not – something else is executed.
 ```javascript
