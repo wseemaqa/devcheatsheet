@@ -460,7 +460,20 @@ a.end()                   // Return an iterator pointing to the imaginary positi
 a.push_front(x);          // Puts x at a[0], shifts elements toward back
 a.pop_front();            // Removes a[0], shifts toward front
 ```
+## `queue` (Array stack queue)
 
+`queue<T>` is like `vector<T>`, but also supports:
+
+```cpp
+#include <queue>    // Include queue (std namespace)
+a.push(x);          //Adds the element ‘x’ at the end of the queue
+a.pop();            //Deletes the first element of the queue
+a.empty();          //Returns whether the queue is empty
+a.size();           //Returns the size of the queue.
+a.front();          //Returns a reference to the first element of the queue
+a.back();           //Returns a reference to the last element of the queue
+a.emplace(x);       //Insert a new element into the queue container, the new element is added to the end of the queue
+```
 
 ## `priority_queue` (context is similar to a heap, where elements can be inserted at any moment, and only the max heap element can be retrieved)
 
