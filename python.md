@@ -9,7 +9,7 @@ print("Hello World")
 ### Comments
 
 * `#` is used to comment a line in Python
-* `'''   '''` this is used for multiline comment in Python
+* `'''   '''` or '"""  """' this is used for multiline comment in Python
 
 ## Data Types
 
