@@ -538,3 +538,14 @@ public class GetFileInfo {
   }  
 } 
 ```
+* **SET DATA TYPE**
+
+```java
+  public class Set<Key extends Comparable<Key>> implements Iterable<Key>
+  Set() //create an empty set
+  boolean isEmpty()  //return if the set is empty
+  void add (Key key)  //add key to the set
+  void remove(Key key)  //remove key from set
+  boolean contains(Key key) //return if the key is in the set
+  int size() //number of elements in set
+```
