@@ -1,18 +1,22 @@
-##  MYSQL
+## MYSQL
 
 MySQL is a open-source, free and very popular relational database management system which is developed, distributed and supported by Oracle corporation.
 
 ## Key Features:
-* Open-source relational database management systems.
-* Reliable, very fast and easy to use database server.
-* Works on client-server model.
-* Highly Secure and Scalable
-* High Performance
-* High productivity as it uses stored procedures, triggers, views to write a highly productive code.
-* Supports large databases efficiently.
-* Supports many operating systems like Linux*,CentOS*, Solaris*,Ubuntu*,Windows*, MacOS*,FreeBSD* and others.
+
+- Open-source relational database management systems.
+- Reliable, very fast and easy to use database server.
+- Works on client-server model.
+- Highly Secure and Scalable
+- High Performance
+- High productivity as it uses stored procedures, triggers, views to write a highly productive code.
+- Supports large databases efficiently.
+- Supports many operating systems like Linux*,CentOS*, Solaris*,Ubuntu*,Windows*, MacOS*,FreeBSD\* and others.
 
 ## Getting started with MYSQL
+
+
+### Create databases
 
 ## Connecting to Database using command-line client
 
@@ -27,15 +31,25 @@ mysql -u [username] -p [database];
 
 ### Create databases 
 
+
 ```sql
 CREATE DATABASE database_name;
 ```
 
-### Using created database 
+### Using created database
 
 ```sql
 USE database_name;
 ```
+
+
+
+### SELECT STATEMENT
+
+```SELECT column1,column2,column3....
+FROM table_name;
+```
+
 ### Create Table
 
 ```sql
@@ -74,6 +88,7 @@ TRUNCATE table table_name;
 ```
 
 
+
 ## Joins 
 
 ### INNER JOIN 
@@ -92,3 +107,5 @@ SELECT ... FROM t1 LEFT JOIN t2 ON t1.id1 = t2.id2 WHERE condition;
 ```sql
 SELECT ... FROM t1 RIGHT JOIN t2 ON t1.id1 = t2.id2 WHERE condition;
 ```
+
+
