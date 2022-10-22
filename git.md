@@ -1,94 +1,182 @@
-## GIT   
-### creates a new local repo.
-	       git init
-### shows changes not yet staged 
-	       git diff
+# GIT   
 
-### Show what files are changed, staged etc
-		git status
+## INSTALLATION
 
-	#Add files that are new, updated etc
-		git add <filenames>
-			Tip: git add . adds all files in the current directory.
+**GitHub for Windows**
+[Click here](htps://windows.github.com)
 
-	#Commits files added with a message ready to be pushed.
-		git commit -m "add message here"
+**GitHub for Mac**
+[Click here](htps://mac.github.com)
 
-	#Display record of commits made
-		git log
+*For Linux and Solaris platforms, the latest release is available on
+the official Git web site.*
+**Git for All Platforms**
+[http://git-scm.com](http://git-scm.com)
 
-	#List branches.
-		git branch
-		
-	#Create a new branch.
-		git branch <branch name>
+## SETUP
+__To configure user information used across all local repositories.__
 
-	#Creates branch and changes to it.
-		git switch -c <branch name>
-		or
-		git checkout -b <branch name>
+*set a name that is identifiable for credit when review version history*
+```
+git config --global user.name “[firstname lastname]”
+```
+*set an email address that will be associated with each history marker*
+```
+git config --global user.email “[valid-email]”
+```
+*set automatic command line coloring for Git for easy reviewing*
+```
+git config --global color.ui auto
+```
 
-	#Change to specified branch.
-		git switch <branch name>
-		or
-		git checkout <branch name>
+## SETUP AND INIT
+__Configuring user information, initializing and cloning repositories__
 
-	#Change to last branch used.
-		git switch -
+**initialize an existing directory as a Git repository**
+```
+git init
+```
+**retrieve an entire repository from a hosted location via URL**
+```
+git clone [url]
+```
 
-	#Show tracked repos.
-		git remote -v	
+## STAGING
+**show modified files in working directory, staged for your next commit**
+```
+git status
+```
 
-	#Push changes to the default remote repo.
-		git push
-			Tip: you can specify the name of another tracked repo after "push".
+**add a file as it looks now to your next commit (stage)**
+```
+git add <filenames>
+```
+**Tip: git add . adds all files in the current directory.**
 
-	#Pull changes from default remote repo and merges them into local.
-		git pull
+**diff of what is changed but not staged**
+```
+git diff
+```
 
-	#Pull changes from default remote repo but do not merg into local.
-		git fetch
+_diff of what is staged but not yet commited_
+```
+git diff --staged
+```
 
-	#Roll back and reset the last staged commit.
-		git reset HEAD~1
-			Tip: The number specifies how much commits to reset by, git reset HEAD~2 rolls back 2 commits etc.
-    
-	#Squash multiple commits into one commit.
-		squash last 4 commits:
-			git rebase -i HEAD~4
-				Note: This command will open up default editor then replace "pick" on the second and subsequent commits with "squash".
-        
-	#Squash all commits:
-			git rebase --root -i
-				Note: This command will open up default editor then replace "pick" on the second and subsequent commits with "squash".
+ _Display record of commits made_
+```
+git log
+```
 
-	#Stash the current state of the working directory
-		git stash
+# BRANCHING AND MERGING
+__List your branches. a * will appear next to the currently active branch__
+```
+git branch
+```
 
-	#Remove the stashed code and apply it in the current working directory
-		git stash pop
+__Create a new branch.__
+```
+git branch <branch name>
+```
 
-	#Remove all stashed entries
-		git stash clear
-  
- 	#Remove new/existing files from staged files
-		git restore --staged <file_name>
-		
-  	#Cherry Pick enables arbitrary Git commits to be picked by reference and appended to the current working HEAD.  
-               cherry pick a commit on to main branch:
-                        git cherry-pick commitSHA
-  
-	#Command to merge a specific branch into the current branch
-		git merge <branch name>
+__Create branch and changes to it.__
+```
+git switch -c <branch name>
+or
+git checkout -b <branch name>
+```
 
-	#To resolve merge conflict manually open the merge tool
-		git mergetool
+__Change to specified branch.__
+```
+git switch <branch name>
+or
+git checkout <branch name>
+```
 
-	#To remove untracked files from the working directory
-		git clean 
+__Change to last branch used.__
+```
+git switch -
+```
 
-	#Command to configure your username
-		git config --global user.name "your name"
+# REMOTE, PUSH & PULL
+__Show tracked repos.__
+```
+git remote -v	
+```
 
-	#To see all configurations
-		git config --list
+__Push changes to the default remote repo.__
+```
+git push
+```	
+*Tip: you can specify the name of another tracked repo after "push".*
+
+__Pull changes from default remote repo and merges them into local.__
+```
+git pull
+```
+
+__Pull changes from default remote repo but do not merg into local.__
+```
+git fetch
+```
+
+__Roll back and reset the last staged commit.__
+```
+git reset HEAD~1
+```
+*Tip: The number specifies how much commits to reset by, git reset HEAD~2 rolls back 2 commits etc.*
+
+
+__Squash multiple commits into one commit.__
+
+_squash last 4 commits:_
+```
+git rebase -i HEAD~4
+```
+*Note: This command will open up default editor then replace "pick" on the second and subsequent commits with "squash".*
+	
+__Squash all commits:__
+```
+git rebase --root -i
+```
+*Note: This command will open up default editor then replace "pick" on the second and subsequent commits with "squash".*
+
+__Stash the current state of the working directory__
+```
+git stash
+```
+
+__Remove the stashed code and apply it in the current working directory__
+```
+git stash pop
+```
+
+__Remove all stashed entries__
+```
+git stash clear
+```
+
+__Remove new/existing files from staged files__
+```
+git restore --staged <file_name>
+```
+
+_Cherry Pick enables arbitrary Git commits to be picked by reference and appended to the current working HEAD._  
+			
+__cherry pick a commit on to main branch:__
+```
+git cherry-pick commitSHA
+```
+
+__Command to merge a specific branch into the current branch__
+```
+git merge <branch name>
+```
+__To resolve merge conflict manually open the merge tool__
+```
+git mergetool
+```
+__To remove untracked files from the working directory__
+```
+git clean 
+```

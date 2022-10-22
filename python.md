@@ -1,8 +1,5 @@
----
-Title: Python
-Description: Python cheatsheet containing useful code snippets and documentation.
----
-
+# PYTHON CHEATSHEET
+    
 ## Basics
 
 ### Display
@@ -12,6 +9,7 @@ print("Hello World")
 ### Comments
 
 * `#` is used to comment a line in Python
+* `'''   '''` or '"""  """' this is used for multiline comment in Python
 
 ## Data Types
 
@@ -34,6 +32,16 @@ print("Hello World")
 |int()| constructs an integer from any form of data like string, float or integer|
 |float()|constructs a float number from any form of data like string, float or integer|
 |str()|constructs a string from any form of data like string, float or integer|
+### Useful Math functions
+|Function| Description|
+|-----|----|
+|complex(x,y)|Creates a complex number x+iy |
+|chr()|return a unicode  string of one character|
+|divmod(a,b)|gets the quotient and remainder of a/b |
+|ord('')|return the unicode codepoint for a one character|
+|pow(a,b)|Power function ie a^b|
+|round()|Round Function|
+|abs()|Gets the absolute value|
 
 ## Variables
 
@@ -200,4 +208,35 @@ while condition :
 |str.zfill(len)|str.swapcase()|str.isdecimal()|
 |str.isdigit()|str.islower()|str.isupper()|
 |str.endswith(value, start, end)|str.startswith(value, start, end)|str.isspace()|
+|str.isalpha() (checking for alphabets)|str.isascii() (checking for ascii chars)|str.title() (making each word first letter capitalized)|
 
+## Python with Files
+
+### Create
+Use open() function with `c` or `a` or `w` as mode.
+
+```py
+file = open("myfile.txt","c")
+```
+### Read
+Use open() function with `r` as mode.
+
+```py
+file = open("myfile.txt","r")
+print(file.read())
+```
+### Update or Append
+Use open() function with  `a` or `w` as mode.
+
+```py
+file = open("myfile.txt","a")
+file.write("Happy learning!!")
+file.close()
+```
+### Delete
+
+For deleting files, you must import os module and use `os.remove()` function.
+```py
+import os
+os.remove(filename)
+```

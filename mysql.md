@@ -15,7 +15,22 @@ MySQL is a open-source, free and very popular relational database management sys
 
 ## Getting started with MYSQL
 
+
 ### Create databases
+
+## Connecting to Database using command-line client
+
+```sql
+mysql -u [username] -p [database];
+```
+
+### To exit from mysql command-line client
+    ```sql
+    exit;
+    ```
+
+### Create databases 
+
 
 ```sql
 CREATE DATABASE database_name;
@@ -28,11 +43,51 @@ USE database_name;
 ```
 
 
+
 ### SELECT STATEMENT
 
 ```SELECT column1,column2,column3....
 FROM table_name;
 ```
+
+### Create Table
+
+```sql
+CREATE TABLE table_name(
+	col1_name datatype,
+	col2_name datatype,
+	coln_name datatype
+);
+```
+
+### Insert Records 
+
+```sql
+INSERT INTO table_name VALUES(value,value,value);
+```
+
+### Modifying Records
+
+```sql
+UPDATE table_name
+SET col1=value1,col2=value2
+WHERE condition;
+```
+### Select 
+```sql
+SELECT col_name FROM table_name;
+SELECT * FROM table_name;
+```
+### 2. ALTER
+```sql 
+ALTER TABLE Table_name ADD column_name datatype;
+```
+### 3. TRUNCATE
+```sql
+TRUNCATE table table_name;
+```
+
+
 
 ## Joins 
 

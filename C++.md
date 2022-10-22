@@ -1,7 +1,24 @@
-
 # C++ QUICK REFERENCE / C++ CHEATSHEET
 
 The goal is to give a concise overview of basic, modern C++ (C++14).
+
+
+
+## Header Files
+
+```cpp
+
+ #include<stdio.h>:         //It is used to perform input and output operations using functions scanf() and printf().
+ #include<iostream>:        //It is used as a stream of Input and Output using cin and cout.
+ #include<string.h>:        //It is used to perform various string functionalities.
+ #include<math.h>:          //It is used to perform mathematical operations.
+ #include<iomanip.h>:       //It is used to access set() and setprecision().
+ #include<signal.h>:        //It is used to perform signal handling functions like signal().
+ #include<stdarg.h>:        //It is used to perform standard argument functions like va_start().
+ #include<errno.h>:         //It is used to perform error handling operations like errno().
+ #include<fstream.h>:       //It is used to control the data to read from a file.
+ #include<time.h>:          //It is used to perform functions related to date() and time()
+```
 
 ## Preprocessor
 
@@ -9,11 +26,13 @@ The goal is to give a concise overview of basic, modern C++ (C++14).
                             // Comment to end of line
                             /* Multi-line comment */
 #include  <stdio.h>         // Insert standard header file
+#include<bits/stdc++.h>        //standard header for C++
+#pragma GCC optimize("Ofast")  // for fast compilation
+#pragma GCC optimize ("O3")
+#pragma GCC target ("avx")
 #include "myfile.h"         // Insert file in current directory
 #define X some text         // Replace X with some text
 #define F(a,b) a+b          // Replace F(1,2) with 1+2
-#define all(arr) arr.begin(),arr.end()  //Replace sort(arr.begin(), arr.end()) with sort(all(arr))
-#define allr(arr) arr.rbegin(),arr.rend()  //Replace sort(arr.rbegin(), arr.rend()) with sort(allr(arr))
 #define X \
  some text                  // Multiline definition
 #undef X                    // Remove definition
@@ -23,26 +42,31 @@ The goal is to give a concise overview of basic, modern C++ (C++14).
 ```
 
 ## Literals
+### Integer Literal Constants
+```cpp
+        12;                //An Integer(16 bits)
+        12U;               //An Unsigned Integer(16 bits)
+        12L;               //A Long Integer(32 bits)
+        12LL;              //A Long Long Integer(64 bits)
+```
+### Floating Point Literal Constants
+```cpp
+        12.1;              //A Double
+        12.1F;             //A Float
+        12.1L;             //A Long Double
+```
 
+### Character Literal Constants
 ```cpp
 255, 0377, 0xff             // Integers (decimal, octal, hex)
 2147483647L, 0x7fffffffl    // Long (32-bit) integers
 123.0, 1.23e2               // double (real) numbers
 'a', '\141', '\x61'         // Character (literal, octal, hex)
-'\n', '\\', '\'', '\"'      // Newline, backslash, single quote, double quote
+'\n','\t','\b', '\\', '\'', '\"'      // Newline,Tab,Backspace Backslash, Single quote, Double quote
 "string\n"                  // Array of characters ending with newline and \0
 "hello" "world"             // Concatenated strings
 true, false                 // bool constants 1 and 0
 nullptr                     // Pointer type with the address of 0
-\a                          // Alarm or Beep (It produces a beep sound)
-\b                          // Backspace (It adds a backspace)
-\f                          // Form feed
-\r                          // Carriage return
-\t                          // Tab (It gives a tab space)
-\?                          // Question mark (It adds a question mark)
-\nnn                        // Octal No. (It represents the value of an octal number)
-\xhh                        // Hexadecimal No. (It represents the value of a hexadecimal number)
-\0                          // NULL (The null character is usually used to terminate a string)
 ```
 
 ## Declarations
@@ -135,17 +159,8 @@ catch (T t) { b; }          // If a throws a T, then jump here
 catch (...) { c; }          // If a throws something else, jump here
 ```
 
-## Fast Input-Output
-```cpp
-  
-  ios_base::sync_with_stdio(false); 
-  cin.tie(NULL); 
-  cout.tie(NULL);
-
-//For fast Input-Output. It helps in Competitive Programming. Lowers the time taken fot the code to pass. Add this in main function.
-```
-
 ## Functions
+
 ```cpp
 int f(int x, int y);        // f is a function taking 2 ints and returning int
 void f();                   // f is a procedure taking no arguments
@@ -164,7 +179,10 @@ it is used. It may be declared first and defined later. Every program consists o
 declarations and a set of function definitions (possibly in separate files), one of which must be:
 
 ```cpp
-int main()  { statements... }     // or
+int main()  { 
+    ios_base::sync_with_stdio(false);       // for fast input and output
+    cin.tie(NULL);
+statements... }     // or
 int main(int argc, char* argv[]) { statements... }
 ```
 
@@ -368,8 +386,6 @@ exp(x); log(x); log10(x);   // e to the x, log base e, log base 10
 pow(x, y); sqrt(x);         // x to the y, square root
 ceil(x); floor(x);          // Round up or down (as a double)
 fabs(x); fmod(x, y);        // Absolute value, x mod y
-x = rand() % 100;           // x in the range 0 to 99
-x = rand() % 100 + 1;      // x in the range 1 to 100
 ```
 
 ## `assert.h`, `cassert` (Debugging Aid)
@@ -413,18 +429,16 @@ if (f2) f2 << x;            // Write to file
 ## `string` (Variable sized character array)
 
 ```cpp
-#include <string>               // Include string (std namespace)
-string s1, s2="hello";          // Create strings
-s1.size(), s2.size();           // Number of characters: 0, 5
-s1 += s2 + ' ' + "world";       // Concatenation
-s1 == "hello world"             // Comparison, also <, >, !=, etc.
-s1[0];                          // 'h'
-s1.substr(m, n);                // Substring of size n starting at s1[m]
-s1.c_str();                     // Convert to const char*
-s1 = to_string(12.05);          // Converts number to string
-getline(cin, s);                // Read line ending in '\n'
-string string1.append(string2); // It is used to concatenate two strings(string1 and string2 are two string names)
-string1.length();               // It returns the length of the string (string1 is the name of the string)
+#include <string>         // Include string (std namespace)
+string s1, s2="hello";    // Create strings
+s1.size(), s2.size();     // Number of characters: 0, 5
+s1 += s2 + ' ' + "world"; // Concatenation
+s1 == "hello world"       // Comparison, also <, >, !=, etc.
+s1[0];                    // 'h'
+s1.substr(m, n);          // Substring of size n starting at s1[m]
+s1.c_str();               // Convert to const char*
+s1 = to_string(12.05);    // Converts number to string
+getline(cin, s);          // Read line ending in '\n'
 ```
 
 ## `vector` (Variable sized array/stack with built in memory allocation)
@@ -433,6 +447,9 @@ string1.length();               // It returns the length of the string (string1 
 #include <vector>         // Include vector (std namespace)
 vector<int> a(10);        // a[0]..a[9] are int (default size is 0)
 vector<int> b{1,2,3};        // Create vector with values 1,2,3
+vector<int> c(10, 5);     //Creates a new vector of 10 elements and initializes the value of each element with 5
+vector<vector<int>> x;    // Creates a 2-Dimensional vector of variable size
+vector<vector<int>> y(5, vector<int>(5, -1))  //Creates a new 2-Dimensional vector with 5 rows and 5 colums with the value of each element initialized with -1
 a.size();                 // Number of elements (10)
 a.push_back(3);           // Increase size to 11, a[10]=3
 a.back()=4;               // a[10]=4;
@@ -440,6 +457,12 @@ a.pop_back();             // Decrease size by 1
 a.front();                // a[0];
 a[20]=1;                  // Crash: not bounds checked
 a.at(20)=1;               // Like a[20] but throws out_of_range()
+a.empty();                //Returns true if the vector is empty, else returns false
+a.insert(a.begin()+1, 100)  //Inserts a new element with the value of 100 after the first element
+a.insert(a.begin()+1, 2, 200)  //Inserts two new elements, each with the value of 200 after the first element
+a.erase(a.begin()+5)      //Deletes the 5th element from the vector
+a.erase(a.begin()+1, a.begin()+3)  //Deletes the second and third element from the vector using 0-based indexing
+                                     (All elements between 2nd and 4th element, including the 2nd element) 
 for (int& p : a)
   p=0;                    // C++11: Set all elements of a to 0
 for (vector<int>::iterator p=a.begin(); p!=a.end(); ++p)
@@ -447,8 +470,6 @@ for (vector<int>::iterator p=a.begin(); p!=a.end(); ++p)
 vector<int> b(a.begin(), a.end());  // b is copy of a
 vector<T> c(n, x);        // c[0]..c[n-1] init to x
 T d[10]; vector<T> e(d, d+10);      // e is initialized from d
-a.begin()                 // Return an iterator pointing to the first element of the vector
-a.end()                   // Return an iterator pointing to the imaginary position one past the end of the vector.
 ```
 
 ## `deque` (Array stack queue)
@@ -459,34 +480,6 @@ a.end()                   // Return an iterator pointing to the imaginary positi
 #include <deque>          // Include deque (std namespace)
 a.push_front(x);          // Puts x at a[0], shifts elements toward back
 a.pop_front();            // Removes a[0], shifts toward front
-```
-## `queue` (Array stack queue)
-
-`queue<T>` is like `vector<T>`, but also supports:
-
-```cpp
-#include <queue>    // Include queue (std namespace)
-a.push(x);          //Adds the element ‘x’ at the end of the queue
-a.pop();            //Deletes the first element of the queue
-a.empty();          //Returns whether the queue is empty
-a.size();           //Returns the size of the queue.
-a.front();          //Returns a reference to the first element of the queue
-a.back();           //Returns a reference to the last element of the queue
-a.emplace(x);       //Insert a new element into the queue container, the new element is added to the end of the queue
-```
-
-## `priority_queue` (context is similar to a heap, where elements can be inserted at any moment, and only the max heap element can be retrieved)
-
-`priority_queue<T>` is like `queue<T>`s:
-
-```cpp
-#include <queue>          // Include queue (std namespace)
-a.push(x);          //	Adds the element ‘x’ at the end of the queue.
-a.pop();            // Deletes the first element of the queue.
-a.size();           //Returns the size of the queue.
-a.empty();          //	Returns whether the queue is empty.
-a.top();          //Returns a reference to the topmost element of the queue.
-a.emplace(x);     //Used to insert a new element into the priority queue container.
 ```
 
 ## `utility` (pair)
