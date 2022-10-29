@@ -78,6 +78,14 @@ To get all unique values from a column :
 ```SQL
 SELECT DISTINCT <column name> FROM <table name> ;
 ```
+
+Syntax to aggregate data, below example is for MAX, other aggregation that can be used MIN, AVG, COUNT, SUM:
+
+```SQL
+
+SELECT MAX <column_name> FROM <table name> ;
+```
+
 ## Where Conditionals
 
 To select specific rows with a condition :
